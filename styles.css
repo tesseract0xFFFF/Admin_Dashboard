@@ -74,7 +74,60 @@ using flex containers */
 }
 
 .main-content{
-    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px repeat(5, 1fr);
     background-color: red;
     grid-area: main-content;
+}
+
+.yourProjects{
+    margin: 10px;
+    display: grid;
+    grid-row: 2 / 7;
+    grid-column: 1 / 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));    
+    gap: 10px;
+}   
+
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / 2:
+}
+
+.title2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+
+.secondaryBoardArea {
+    grid-column: 5 / 8;
+    grid-row: 2 / 7;
+}
+
+.announcements {
+    width: 25%;
+    height: 25%;
+
+}
+
+.trending {
+    width: 25%;
+    height: 25%;    
+}
+
+.project1, .project2, .project3,
+.project4, .project5, .project6{
+    background-color: #444;
+    text-align: center;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
 }
