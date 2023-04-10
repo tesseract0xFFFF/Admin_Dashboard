@@ -1,0 +1,25 @@
+.container{
+    height: 100vh;
+    width:100vw;
+    display: grid;
+    grid-template: 1fr 6fr / 1fr 6fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main-content"
+    ;
+}
+
+.sidebar{
+    background-color: aqua;
+    grid-area: sidebar ;
+}
+
+.header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+.main-content{
+    background-color: red;
+    grid-area: main-content;
+}
