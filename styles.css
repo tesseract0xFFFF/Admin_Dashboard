@@ -9,10 +9,29 @@
     ;
 }
 
+/* sets up the sidebar
+sidebar content is divided into two groups 
+using flex containers */
 .sidebar{
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
     grid-area: sidebar ;
+    gap: 50px;
 }
+
+.sidebargroup1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebargroup2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 .header{
     background-color: blueviolet;
