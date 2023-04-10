@@ -34,11 +34,47 @@ using flex containers */
 
 
 .header{
+    display: grid;
     background-color: blueviolet;
     grid-area: header;
+    grid-template-columns: repeat(6, 1fr);
+    
+}
+
+.searchbar{
+
+    grid-column: 1 / 4 ;
+    
+}
+
+.namepicbig{
+    grid-row: 2 / 3 ;
+    grid-column: 1 / 3 ;
+}
+
+.searchbarinput{
+    display: flex;
+    margin-left: 50px;
+    width: 75%;
+    border-radius: 25px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+
+.namepicsmall{
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
 }
 
 .main-content{
+    
     background-color: red;
     grid-area: main-content;
 }
