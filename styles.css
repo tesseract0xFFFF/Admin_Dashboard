@@ -79,16 +79,21 @@ using flex containers */
     grid-template-rows: 50px repeat(5, 1fr);
     background-color: red;
     grid-area: main-content;
+    padding: 10px;
 }
 
 .yourProjects{
     margin: 10px;
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     grid-row: 2 / 7;
     grid-column: 1 / 5;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));    
-    gap: 10px;
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));     */
+    gap: 20px;
 }   
 
 .title1{
@@ -109,6 +114,9 @@ using flex containers */
 .secondaryBoardArea {
     grid-column: 5 / 8;
     grid-row: 2 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .announcements {
@@ -124,10 +132,12 @@ using flex containers */
 
 .project1, .project2, .project3,
 .project4, .project5, .project6{
-    background-color: #444;
+    background-color: white;
     text-align: center;
-    color: #ddd;
+    color: red;
     font-family: sans-serif;
     font-size: 1.5rem;
     padding: 12px;
+    width: 200px;
+    height: 200px;
 }
